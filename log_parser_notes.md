@@ -28,4 +28,4 @@ Your mission is to write a script that reads lines from `sys.stdin`:
 ## Rules
 
 1. Every conditional must end with a colon (`:`).
-2. Indentation matters — it defines what belongs to the block.
+2. Indentation matters! This defines what belongs to the block.
