@@ -34,3 +34,17 @@ Your mission is to write a script that reads lines from `sys.stdin`:
 
 ex: if network_load > 90:
     print("Alert")
+
+## Pseudocode
+
+Writing out your program's logic in plain English before you write the actual code. Makes sure the logic is sound before you build.
+
+1. Loop through each line from stdin. Think of stdin as a conveyor belt that keeps handing you one line at a time. The loop says: grab a line, run my code on it, grab the next one. Repeat until the belt runs out.
+
+2. Strip the whitespace. The belt doesn't hand you a clean "ADMIN", it hands you "ADMIN\n". That \n is just the wrapper from when the line got boxed up and sent. Strip peels it off so you're holding the actual ID, not some invisible packaging.
+
+3. IF the line is blank after stripping, skip it. This is the "blank space errors" part of the mission. The box was empty. Nothing to check, so just toss it and grab the next one off the belt.
+
+4. ELSE IF the ID is "ADMIN", print the alert. We use .upper() so it doesn't matter if they type "admin" or "Admin" or "ADMIN", it all gets caught. This is similar to the kernel bouncer doing its job but in a different situation.
+
+5. ELSE print the success message. Everything that isn't an empty box and isn't ADMIN just gets cleared. "You're fine, moving on." Next line off the belt. 
