@@ -47,7 +47,7 @@ Writing out your program's logic in plain English before you write the actual co
 
 4. ELSE IF the ID is "ADMIN", print the alert. We use .upper() so it doesn't matter if they type "admin" or "Admin" or "ADMIN", it all gets caught. This is similar to the kernel bouncer doing its job but in a different situation.
 
-5. ELSE print the success message. Everything that isn't an empty box and isn't ADMIN just gets cleared. "You're fine, moving on." Next line off the belt.
+5. ELSE print the success message.Everything that isn't an empty box and isn't ADMIN just gets cleared. "You're fine, moving on." Next line off the belt.
 
 ## Test Output
 
