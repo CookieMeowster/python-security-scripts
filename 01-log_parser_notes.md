@@ -17,8 +17,11 @@ Your mission is to write a script that reads lines from `sys.stdin`:
 | `sys.stdin` | Pours data into your script while it's running. |
 | `print("Hello")` | Outputs text to the terminal. |
 | `print(f"Hello {name}")` | Outputs the value of the variable `name`. `f` stands for format. |
-| `.strip()` | Removes white spaces from beginning and end of a text. Needed because `sys.stdin` gives you the line with a trailing newline the user types `"ADMIN"`, but the computer sees `"ADMIN\n"`. |
+| `.strip()` | Removes white spaces from beginning and end of a text. Needed because sys.stdin adds a trailing newline. The user types "ADMIN", but the computer sees "ADMIN\n". |
 | `.upper()` | This forces conversion in a string to uppercase. Used here for case-insensitive matching, so "admin", "Admin", and "ADMIN" all trigger the same check. |  
+| `argparse` | Lets you pass arguments in the terminal like --input file.log |
+| `re.search()` | Finds a pattern in a string (like an IP address in a log line). |
+| `csv.writer` | Writes rows to a .csv file. |
 
 ## Conditionals
 
@@ -57,3 +60,15 @@ User heidi authorized
 ALERT: ADMIN login attempt detected
 ALERT: Unauthorized user attempt: random_guy
 ```
+
+## argparse
+
+
+
+## Regex
+
+
+
+## CSV Output
+
+  
