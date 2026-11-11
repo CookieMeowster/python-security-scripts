@@ -60,7 +60,6 @@ User heidi authorized
 ALERT: ADMIN login attempt detected
 ALERT: Unauthorized user attempt: random_guy
 ```
-<<<<<<< HEAD
 
 ## argparse
 
@@ -73,5 +72,3 @@ ALERT: Unauthorized user attempt: random_guy
 ## CSV Output
 
   
-=======
->>>>>>> 9cb7cfb495f588b22d9271992f447aa3622e3542
