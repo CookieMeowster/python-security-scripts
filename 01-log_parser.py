@@ -1,22 +1,29 @@
 import sys
 
+authorized_users = {"HEIDI"}
 # Pseudocode:
 # 1. Loop through each line from stdin.
 # 2. Strip the whitespace.
 # 3. If blank, skip (continue).
 # 4. If ID is "ADMIN" (case-insensitive), print alert.
-# 5. Otherwise, print success message.
+# 5. If the ID is in authorized_users, print authorized. 
+# 6. Otherwise, print an unauthorized alert.
 
 for line in sys.stdin:
     clean_line = line.strip()
 
-#1. If the line is empty. skip it
     if clean_line == "":
-        pass
-#2. Checks if it maches our threat target (ignores case sensitivity)
-    elif clean_line.upper() == "ADMIN":
-        print("ALERT: Unauthorized Admin Access Attempt!")
-#3. For everything else
+        continue
+
+    # I learned that casefold() checks  case-insensitive text matching and handles some 
+    # Unicode characters more thoroughly than .upper().  
+    # But I'll stick with .upper for this code.
+    user_key = clean_line.upper()
+
+    # Checks the user
+    if user_key == "ADMIN":
+        print("ALERT: ADMIN login attempt detected")
+    elif user_key in authorized_users:
+        print(f"User {clean_line} authorized")
     else:
-        #Failed the variable name inside the f-string here:
-        print(f"User {clean_line} analysed") 
+        print(f"ALERT: Unauthorized user attempt: {clean_line}")
