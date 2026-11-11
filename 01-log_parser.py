@@ -9,9 +9,17 @@ authorized_users = {"HEIDI"}
 # 5. If the ID is in authorized_users, print authorized. 
 # 6. Otherwise, print an unauthorized alert.
 
-for line in sys.stdin:
-    clean_line = line.strip()
 
+# The "in" here means "for each item in." 
+for line in sys.stdin:
+    #line comes off the belt and has an invisible \n attached to the end (the wrapper).
+    #ex: line = "ADMIN\n" (raw, from the belt)
+    #.strip peels off that wrapper aka \n
+    # clean_line is the name I'm giving the stripped version so I can use it below.
+    #ex: clean_line = "ADMIN"(stripped, ready to check)
+    clean_line = line.strip()
+    # This makes sure that if someone hits enter with an empty line,
+    # it does not do a single thing.   
     if clean_line == "":
         continue
 
