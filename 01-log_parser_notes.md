@@ -64,11 +64,7 @@ ALERT: Unauthorized user attempt: random_guy
 ## argparse
 
 
-
 ## Regex
 
 
-
 ## CSV Output
-
-  
