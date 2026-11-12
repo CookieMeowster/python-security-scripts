@@ -22,6 +22,7 @@ Your mission is to write a script that reads lines from `sys.stdin`:
 | `argparse` | Lets you pass arguments in the terminal like --input file.log |
 | `re.search()` | Finds a pattern in a string (like an IP address in a log line). |
 | `csv.writer` | Writes rows to a .csv file. |
+| `open(file, "r")` | Opens a file in read mode. `"r"` = read, `"w"` = write, `"a"` = append, and `"r+"` = read and write. I'm reading a log file, so `"r"`. |
 
 ## Conditionals
 

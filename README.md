@@ -10,5 +10,5 @@ Small Python scripts I'm building as I learn. Not production-grade, just proof I
 
 ## In Progress
 
-- [ ] `log_parser.py` |  add argparse, regex for IP extraction, CSV output |
+- [ ] | `log_parser.py` |  add argparse, regex for IP extraction, CSV output |
 
