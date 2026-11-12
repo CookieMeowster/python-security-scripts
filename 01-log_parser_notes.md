@@ -75,7 +75,7 @@ Argparse does this smol thing. It's like Pacman going down a line ingesting the 
 | `--input [file]` | Reads from that file. No flag = reads from stdin like before. |
 | `--verbose` | On/off switch. Type it and you get a summary line at the bottom (how many lines read, how many flagged). Skip it and you just get the alerts. |
 
-The logic of the code didn't change. Strip, upper, if/elif/else, the whole thing is exactly the way I had it.
+The logic of the code didn't change. Strip, upper, if/elif/else, the whole thing is exactly the way I had it. I just added more rules to the game.
 
 
 ## Regex
