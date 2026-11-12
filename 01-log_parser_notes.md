@@ -64,6 +64,19 @@ ALERT: Unauthorized user attempt: random_guy
 
 ## argparse
 
+Before this, the only way to test the script was `echo -e "..." | python log_parser.py`. Which is fine for a demo, but it's not how a log parser actually gets used. In real life you've got a file full of 500 lines and no one wants to go through that so you just want to point the script at it.
+
+
+Argparse does this smol thing. It's like Pacman going down a line ingesting the path and going for a specific route. Same brain, different door.
+
+
+| Flag | What it does |
+|------|-------------|
+| `--input [file]` | Reads from that file. No flag = reads from stdin like before. |
+| `--verbose` | On/off switch. Type it and you get a summary line at the bottom (how many lines read, how many flagged). Skip it and you just get the alerts. |
+
+The logic of the code didn't change. Strip, upper, if/elif/else, the whole thing is exactly the way I had it.
+
 
 ## Regex
 
